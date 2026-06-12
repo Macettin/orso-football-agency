@@ -108,7 +108,7 @@ export function InitialsPortrait({
       <span className="absolute inset-0 flex items-center justify-center font-display text-6xl font-semibold text-white/80">
         {initials}
       </span>
-      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/80 to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#071426]/90 to-transparent" />
     </div>
   );
 }

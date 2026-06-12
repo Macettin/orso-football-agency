@@ -8,14 +8,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: '#020817',
-        navy: '#04102a',
-        panel: '#07111f',
+        ink: '#071426',
+        navy: '#0B1E36',
+        panel: '#10243F',
         brand: '#003090',
-        accent: '#0b4bd3',
-        silver: '#cbd5e1',
-        mist: '#aab6c8',
-        line: '#17243a'
+        accent: '#2563EB',
+        silver: '#CBD5E1',
+        mist: '#CBD5E1',
+        line: '#29415F'
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'Arial', 'sans-serif'],
@@ -23,11 +23,11 @@ const config: Config = {
       },
       backgroundImage: {
         'hero-grid':
-          'linear-gradient(rgba(11,75,211,.09) 1px, transparent 1px), linear-gradient(90deg, rgba(11,75,211,.09) 1px, transparent 1px)'
+          'linear-gradient(rgba(37,99,235,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(37,99,235,.08) 1px, transparent 1px)'
       },
       boxShadow: {
-        blue: '0 22px 70px rgba(11,75,211,.18)',
-        'blue-soft': '0 12px 40px rgba(0,48,144,.14)'
+        blue: '0 22px 70px rgba(0,48,144,.20)',
+        'blue-soft': '0 12px 36px rgba(7,20,38,.14)'
       }
     }
   },

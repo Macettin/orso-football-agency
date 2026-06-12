@@ -7,11 +7,11 @@ import type {NewsPost} from '@/lib/news';
 export function NewsCard({post, readMore, locale}: {post: NewsPost; readMore: string; locale: Locale}) {
   return (
     <article className="group overflow-hidden border border-line bg-panel transition hover:border-accent/60 hover:shadow-blue-soft">
-      <div className="relative aspect-[16/10] bg-[#061426]">
+      <div className="relative aspect-[16/10] bg-[#0B1E36]">
         {post.image_url ? (
           <Image src={post.image_url} alt={post.title} fill sizes="(max-width: 1024px) 100vw, 380px" className="object-cover" />
         ) : (
-          <div className="h-full bg-[radial-gradient(circle_at_70%_30%,rgba(11,75,211,.35),transparent_45%),linear-gradient(135deg,#071b43,#020817)]" />
+          <div className="h-full bg-[radial-gradient(circle_at_70%_30%,rgba(37,99,235,.30),transparent_45%),linear-gradient(135deg,#10243F,#071426)]" />
         )}
       </div>
       <div className="p-6">

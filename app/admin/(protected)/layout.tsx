@@ -13,7 +13,7 @@ export default async function ProtectedAdminLayout({
 
   return (
     <div className="min-h-screen bg-ink">
-      <header className="border-b border-line bg-[#04102a]/95 backdrop-blur">
+      <header className="border-b border-line bg-[#0B1E36]/95 backdrop-blur">
         <div className="mx-auto flex min-h-20 max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-3 sm:px-8">
           <Link href="/admin/dashboard" className="flex items-center gap-3">
             <div className="logo-plate h-14 w-14 rounded-lg">

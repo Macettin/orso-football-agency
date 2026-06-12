@@ -11,7 +11,7 @@ export async function Footer() {
   const common = await getTranslations('common');
 
   return (
-    <footer className="border-t border-line bg-[#010613]">
+    <footer className="border-t border-line bg-[#0B1E36]">
       <div className="container-shell grid gap-12 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div className="relative">
           <div className="logo-plate h-28 w-28 rounded-2xl">

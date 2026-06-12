@@ -23,7 +23,7 @@ export default async function AdminLoginPage() {
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-[radial-gradient(circle_at_50%_10%,rgba(11,75,211,.16),transparent_30rem)] px-5 py-12">
-      <section className="w-full max-w-md border border-line bg-[#04102a]/90 p-7 shadow-blue sm:p-9">
+      <section className="w-full max-w-md border border-line bg-[#0B1E36]/95 p-7 shadow-blue sm:p-9">
         <div className="flex items-center gap-4 border-b border-line pb-6">
           <div className="logo-plate h-16 w-16 rounded-xl">
             <Image

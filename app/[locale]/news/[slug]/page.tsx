@@ -28,7 +28,7 @@ export default async function NewsDetailPage({params}: {params: Promise<{locale:
         <h1 className="mt-5 max-w-4xl font-display text-4xl font-semibold leading-tight text-white sm:text-6xl">{post.title}</h1>
         <p className="mt-6 max-w-3xl text-xl leading-9 text-slate-300">{post.excerpt}</p>
         {post.image_url ? (
-          <div className="relative mt-10 aspect-[16/9] overflow-hidden border border-line bg-[#061426]">
+          <div className="relative mt-10 aspect-[16/9] overflow-hidden border border-line bg-[#0B1E36]">
             <Image src={post.image_url} alt={post.title} fill sizes="(max-width: 1024px) 100vw, 1024px" className="object-cover" priority />
           </div>
         ) : null}

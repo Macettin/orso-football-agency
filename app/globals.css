@@ -17,10 +17,10 @@ html {
 body {
   margin: 0;
   background:
-    radial-gradient(circle at 10% 0%, rgba(11, 75, 211, 0.15), transparent 30rem),
-    radial-gradient(circle at 92% 18%, rgba(0, 48, 144, 0.1), transparent 26rem),
-    #020817;
-  color: #f8fafc;
+    radial-gradient(circle at 10% 0%, rgba(37, 99, 235, 0.13), transparent 32rem),
+    radial-gradient(circle at 92% 18%, rgba(0, 48, 144, 0.11), transparent 28rem),
+    #071426;
+  color: #eaf1ff;
 }
 
 ::selection {
@@ -33,14 +33,14 @@ body {
 }
 
 .brand-text {
-  background: linear-gradient(120deg, #ffffff, #6ea0ff 48%, #0b4bd3);
+  background: linear-gradient(120deg, #ffffff, #93b7ff 48%, #2563eb);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
 .glass-card {
-  @apply border border-line bg-panel/80 backdrop-blur-sm;
+  @apply border border-line bg-panel/90 backdrop-blur-sm;
 }
 
 .logo-plate {
@@ -52,10 +52,10 @@ body {
   border: 1px solid rgba(110, 160, 255, 0.18);
   background:
     radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.06), transparent 55%),
-    rgba(4, 16, 42, 0.72);
+    rgba(11, 30, 54, 0.82);
   box-shadow:
     0 10px 28px rgba(0, 48, 144, 0.16),
-    inset 0 0 22px rgba(11, 75, 211, 0.06);
+    inset 0 0 22px rgba(37, 99, 235, 0.07);
   backdrop-filter: blur(8px);
 }
 
@@ -65,7 +65,7 @@ body {
   z-index: -1;
   inset: 18%;
   border-radius: 9999px;
-  background: rgba(11, 75, 211, 0.16);
+  background: rgba(37, 99, 235, 0.16);
   filter: blur(15px);
 }
 
@@ -81,11 +81,49 @@ body {
   content: '';
   width: 2rem;
   height: 1px;
-  background: #0b4bd3;
+  background: #2563eb;
 }
 
 .rtl .eyebrow::before {
   order: 2;
+}
+
+.light-section {
+  background:
+    radial-gradient(circle at 85% 15%, rgba(37, 99, 235, 0.08), transparent 24rem),
+    #f5f8fc;
+  color: #0f172a;
+}
+
+.light-section .text-white {
+  color: #0f172a !important;
+}
+
+.light-section .text-mist,
+.light-section .text-slate-300,
+.light-section .text-slate-400,
+.light-section .text-slate-500 {
+  color: #475569 !important;
+}
+
+.light-section .border-line {
+  border-color: #d7e1ee !important;
+}
+
+.light-section .bg-panel,
+.light-section .glass-card {
+  background-color: #ffffff !important;
+}
+
+.light-section .eyebrow {
+  color: #003090;
+}
+
+.light-card {
+  background: #ffffff;
+  color: #0f172a;
+  border-color: #d7e1ee;
+  box-shadow: 0 16px 42px rgba(15, 23, 42, 0.10);
 }
 
 input,

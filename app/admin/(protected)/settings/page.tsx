@@ -135,7 +135,7 @@ export default async function AdminSettingsPage({
             </h2>
           </div>
           <div className="p-5">
-            <div className="aspect-video overflow-hidden bg-[#020817]">
+            <div className="aspect-video overflow-hidden bg-[#071426]">
               {enabled && previewUrl ? (
                 <iframe
                   src={previewUrl}
@@ -145,7 +145,7 @@ export default async function AdminSettingsPage({
                   allowFullScreen
                 />
               ) : (
-                <div className="flex h-full items-center justify-center bg-[radial-gradient(circle_at_center,rgba(11,75,211,.22),transparent_55%),#020817] text-sm text-slate-400">
+                <div className="flex h-full items-center justify-center bg-[radial-gradient(circle_at_center,rgba(37,99,235,.22),transparent_55%),#071426] text-sm text-slate-400">
                   Video background disabled
                 </div>
               )}

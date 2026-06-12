@@ -174,7 +174,7 @@ function VideoForm({
           Video preview
         </div>
         {embedUrl ? (
-          <div className="overflow-hidden border border-line bg-[#020817]">
+          <div className="overflow-hidden border border-line bg-[#071426]">
             <div className="aspect-video">
               <iframe
                 src={embedUrl}

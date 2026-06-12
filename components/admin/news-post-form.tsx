@@ -98,7 +98,7 @@ export function NewsPostForm({action, label, post}: Props) {
         <div className="mb-2 text-xs font-bold uppercase tracking-wider text-slate-400">Live preview</div>
         <article className="overflow-hidden border border-line bg-panel shadow-blue-soft">
           <div
-            className="flex aspect-[16/10] items-center justify-center bg-[#061426] bg-cover bg-center"
+            className="flex aspect-[16/10] items-center justify-center bg-[#0B1E36] bg-cover bg-center"
             style={previewImage ? {backgroundImage: `url("${previewImage}")`} : undefined}
           >
             {!previewImage ? <Newspaper className="h-12 w-12 text-blue-400" /> : null}

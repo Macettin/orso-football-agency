@@ -6,7 +6,7 @@ export function TransferCard({deal, from, to, type}: {deal: TransferDeal; from: 
   return (
     <article className="overflow-hidden border border-line bg-panel transition hover:border-accent/60 hover:shadow-blue-soft">
       {(deal.image_url || deal.player_photo_url) ? (
-        <div className="relative aspect-[16/9] bg-[#061426]">
+        <div className="relative aspect-[16/9] bg-[#0B1E36]">
           <Image src={deal.image_url || deal.player_photo_url!} alt={deal.player_name} fill sizes="(max-width: 768px) 100vw, 520px" className="object-contain p-3" />
         </div>
       ) : null}

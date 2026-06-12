@@ -45,7 +45,7 @@ export default async function PlayerPage({
 
   return (
     <>
-      <section className="relative overflow-hidden border-b border-line bg-[#020817] pt-32 sm:pt-40">
+      <section className="relative overflow-hidden border-b border-line bg-[#071426] pt-32 sm:pt-40">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_15%,rgba(11,75,211,0.20),transparent_35%)]" />
         <div className="container-shell relative z-10 pb-8">
           <Link
@@ -70,7 +70,7 @@ export default async function PlayerPage({
                 <InitialsPortrait initials={player.initials} tone={player.tone} compact />
               </div>
             )}
-            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#020817] to-transparent" />
+            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-[#071426] to-transparent" />
           </div>
           <div className="pb-12 lg:pb-20">
             <div className="eyebrow">{t('profile')}</div>
@@ -194,7 +194,7 @@ export default async function PlayerPage({
                   <h3 className="border-b border-line px-5 py-4 font-display text-xl font-semibold text-white">
                     {video.title}
                   </h3>
-                  <div className="aspect-video bg-[#020817]">
+                  <div className="aspect-video bg-[#071426]">
                     <iframe
                       src={video.embedUrl}
                       title={video.title}

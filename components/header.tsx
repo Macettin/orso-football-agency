@@ -39,7 +39,7 @@ export function Header() {
   }
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#020817]/35 shadow-[0_8px_30px_rgba(0,48,144,.08)] backdrop-blur-md">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#071426]/78 shadow-[0_8px_30px_rgba(7,20,38,.16)] backdrop-blur-md">
       <div className="container-shell flex h-24 items-center justify-between gap-5">
         <Link
           href="/"

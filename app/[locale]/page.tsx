@@ -44,7 +44,7 @@ export default async function HomePage({params}: {params: Promise<{locale: Local
 
   return (
     <>
-      <section className="relative min-h-screen overflow-hidden border-b border-line bg-[#020817]">
+      <section className="relative min-h-screen overflow-hidden border-b border-line bg-[#071426]">
         {heroVideo.enabled && heroVideo.embedUrl ? (
           <div className="pointer-events-none absolute inset-0 z-0 overflow-hidden">
             <iframe
@@ -57,9 +57,9 @@ export default async function HomePage({params}: {params: Promise<{locale: Local
             />
           </div>
         ) : (
-          <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_72%_38%,rgba(11,75,211,.24),transparent_32rem),linear-gradient(135deg,#020817_0%,#04102a_55%,#020817_100%)] rtl:bg-[radial-gradient(circle_at_28%_38%,rgba(11,75,211,.24),transparent_32rem),linear-gradient(225deg,#020817_0%,#04102a_55%,#020817_100%)]" />
+          <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_72%_38%,rgba(37,99,235,.26),transparent_32rem),linear-gradient(135deg,#071426_0%,#0B1E36_55%,#071426_100%)] rtl:bg-[radial-gradient(circle_at_28%_38%,rgba(37,99,235,.26),transparent_32rem),linear-gradient(225deg,#071426_0%,#0B1E36_55%,#071426_100%)]" />
         )}
-        <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(2,8,23,.88)_0%,rgba(2,8,23,.60)_45%,rgba(2,8,23,.35)_100%)] rtl:bg-[linear-gradient(270deg,rgba(2,8,23,.88)_0%,rgba(2,8,23,.60)_45%,rgba(2,8,23,.35)_100%)]" />
+        <div className="absolute inset-0 z-10 bg-[linear-gradient(90deg,rgba(7,20,38,.88)_0%,rgba(11,30,54,.66)_45%,rgba(7,20,38,.38)_100%)] rtl:bg-[linear-gradient(270deg,rgba(7,20,38,.88)_0%,rgba(11,30,54,.66)_45%,rgba(7,20,38,.38)_100%)]" />
         <VisualEditButton page="home" section="hero" contentKey="title" />
         <VisualEditButton page="home" section="hero" contentKey="titleAccent" offset={1} />
         <VisualEditButton page="home" section="hero" contentKey="description" offset={2} />
@@ -85,21 +85,21 @@ export default async function HomePage({params}: {params: Promise<{locale: Local
         <ArrowDown className="absolute bottom-8 left-1/2 z-10 h-5 w-5 -translate-x-1/2 animate-bounce text-blue-400" />
       </section>
 
-      <section className="section-pad relative">
+      <section className="light-section section-pad relative">
         <VisualEditButton page="home" section="about" contentKey="aboutText" />
         <div className="container-shell grid items-center gap-12 lg:grid-cols-[1.1fr_.9fr] lg:gap-20">
           <div>
             <SectionHeading eyebrow={t('aboutEyebrow')} title={t('aboutTitle')} text={t('aboutText')} />
             <div className="mt-8"><BrandButton href="/about" outline>{common('discover')}</BrandButton></div>
           </div>
-          <div className="relative min-h-[390px] border border-line bg-panel p-8 shadow-blue-soft sm:p-10">
+          <div className="relative min-h-[390px] border border-[#d7e1ee] bg-white p-8 shadow-blue-soft sm:p-10">
             <div className="absolute -right-3 -top-3 h-20 w-20 border-r border-t border-accent/70" />
             <div className="text-7xl font-semibold text-blue-400">“</div>
-            <p className="mt-4 font-display text-2xl leading-relaxed text-white">
+            <p className="mt-4 font-display text-2xl leading-relaxed text-[#0F172A]">
               {t('founderQuote')}
             </p>
             <div className="mt-10 border-t border-line pt-6">
-              <div className="font-display text-lg font-bold text-white">Eren YILDIRIM</div>
+              <div className="font-display text-lg font-bold text-[#0F172A]">Eren YILDIRIM</div>
               <div className="mt-1 text-xs uppercase tracking-[0.16em] text-blue-400">{common('licensed')}</div>
             </div>
           </div>
@@ -120,19 +120,19 @@ export default async function HomePage({params}: {params: Promise<{locale: Local
         </div>
       </section>
 
-      {latestTransfers.length ? <section className="section-pad">
+      {latestTransfers.length ? <section className="light-section section-pad">
         <div className="container-shell">
           <SectionHeading eyebrow={t('transfersEyebrow')} title={t('transfersTitle')} />
-          <div className="mt-10 divide-y divide-line border-y border-line">
+          <div className="mt-10 divide-y divide-[#d7e1ee] border-y border-[#d7e1ee]">
             {latestTransfers.map((transfer, index) => (
               <div key={transfer.id ?? `${transfer.player_name}-${transfer.season}`} className="grid gap-4 py-6 sm:grid-cols-[60px_1fr_1fr_auto] sm:items-center">
                 <span className="font-display text-2xl text-blue-400">0{index + 1}</span>
                 <div>
-                  <div className="font-display text-xl font-semibold text-white">{transfer.player_name}</div>
-                  <div className="mt-1 text-sm text-mist">{transfer.season}</div>
+                  <div className="font-display text-xl font-semibold text-[#0F172A]">{transfer.player_name}</div>
+                  <div className="mt-1 text-sm text-slate-600">{transfer.season}</div>
                 </div>
-                <div className="text-sm text-slate-300">{transfer.from_club} <span className="mx-2 text-blue-400">{'->'}</span> {transfer.to_club}</div>
-                <span className="w-fit border border-line bg-blue-950/20 px-3 py-1 text-xs uppercase tracking-wider text-mist">{transfer.transfer_type}</span>
+                <div className="text-sm text-slate-700">{transfer.from_club} <span className="mx-2 text-blue-600">{'->'}</span> {transfer.to_club}</div>
+                <span className="w-fit border border-[#d7e1ee] bg-white px-3 py-1 text-xs uppercase tracking-wider text-slate-600">{transfer.transfer_type}</span>
               </div>
             ))}
           </div>
@@ -167,19 +167,19 @@ export default async function HomePage({params}: {params: Promise<{locale: Local
         </div>
       </section>
 
-      <section className="section-pad">
+      <section className="light-section section-pad">
         <div className="container-shell">
           <SectionHeading eyebrow={t('statsEyebrow')} title={t('statsTitle')} align="center" />
-          <div className="mt-12 grid grid-cols-2 overflow-hidden border border-line bg-panel shadow-blue-soft md:grid-cols-4">
+          <div className="mt-12 grid grid-cols-2 overflow-hidden border border-[#d7e1ee] bg-white shadow-blue-soft md:grid-cols-4">
             {[
               ['6+', t('statMarkets')],
               ['4', t('statLanguages')],
               ['360°', t('statSupport')],
               ['1', t('statStandard')]
             ].map(([value, label], index) => (
-              <div key={label} className="relative border-b border-r border-line bg-gradient-to-b from-blue-950/30 to-transparent p-7 text-center last:border-r-0 md:p-10">
+              <div key={label} className="relative border-b border-r border-[#d7e1ee] bg-gradient-to-b from-blue-50 to-white p-7 text-center last:border-r-0 md:p-10">
                 <div className="font-display text-4xl font-semibold text-blue-400 sm:text-5xl">{value}</div>
-                <div className="mt-3 text-xs font-bold uppercase tracking-[0.15em] text-mist">{label}</div>
+                <div className="mt-3 text-xs font-bold uppercase tracking-[0.15em] text-slate-600">{label}</div>
                 <VisualEditButton
                   page="home"
                   section="stats"
@@ -206,7 +206,7 @@ export default async function HomePage({params}: {params: Promise<{locale: Local
       </section>
 
       {partners.length ? (
-        <section className="section-pad relative border-b border-line bg-panel/40">
+        <section className="light-section section-pad relative border-b border-[#d7e1ee]">
           <div className="container-shell relative">
             <VisualEditButton page="home" section="partners" contentKey="partnersTitle" />
             <VisualEditButton page="home" section="partners" contentKey="partnersEyebrow" offset={1} />
@@ -218,7 +218,7 @@ export default async function HomePage({params}: {params: Promise<{locale: Local
         </section>
       ) : null}
 
-      {latestNews.length ? <section className="section-pad border-b border-line bg-navy/50">
+      {latestNews.length ? <section className="light-section section-pad border-b border-[#d7e1ee]">
         <div className="container-shell">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeading eyebrow={t('newsEyebrow')} title={t('newsTitle')} />
@@ -234,7 +234,7 @@ export default async function HomePage({params}: {params: Promise<{locale: Local
 
       <section className="section-pad">
         <div className="container-shell">
-          <div className="relative overflow-hidden border border-accent/40 bg-[linear-gradient(120deg,#071b43,#04102a)] p-8 shadow-blue sm:p-12 lg:p-16">
+          <div className="relative overflow-hidden border border-accent/40 bg-[linear-gradient(120deg,#10243F,#0B1E36)] p-8 shadow-blue sm:p-12 lg:p-16">
             <VisualEditButton page="home" section="cta" contentKey="ctaTitle" />
             <VisualEditButton page="home" section="cta" contentKey="ctaText" offset={1} />
             <VisualEditButton page="home" section="cta" contentKey="ctaButton" offset={2} />

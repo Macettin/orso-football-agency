@@ -44,14 +44,14 @@ export function VisualEditModal({
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="absolute end-3 z-30 inline-flex h-9 items-center gap-2 rounded-sm border border-blue-400/60 bg-[#04102a]/95 px-3 text-[10px] font-bold uppercase tracking-wider text-blue-200 shadow-blue-soft backdrop-blur hover:bg-brand"
+        className="absolute end-3 z-30 inline-flex h-9 items-center gap-2 rounded-sm border border-blue-400/60 bg-[#0B1E36]/95 px-3 text-[10px] font-bold uppercase tracking-wider text-blue-200 shadow-blue-soft backdrop-blur hover:bg-brand"
         style={{top: `${12 + offset * 42}px`}}
       >
         <Pencil className="h-3.5 w-3.5" /> Edit
       </button>
 
       {open ? (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/75 p-4 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-[#071426]/80 p-4 backdrop-blur-sm">
           <div className="max-h-[92vh] w-full max-w-4xl overflow-y-auto border border-accent/50 bg-[#07111f] shadow-blue">
             <div className="sticky top-0 z-10 flex items-start justify-between gap-4 border-b border-line bg-[#07111f]/95 p-5 backdrop-blur sm:p-6">
               <div>

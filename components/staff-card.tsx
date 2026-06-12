@@ -12,7 +12,7 @@ export function StaffCard({member}: {member: StaffMember}) {
           aria-label={member.name}
         />
       ) : (
-        <div className="flex aspect-[4/5] items-center justify-center bg-[radial-gradient(circle_at_center,rgba(11,75,211,.25),transparent_58%),#04102a]">
+        <div className="flex aspect-[4/5] items-center justify-center bg-[radial-gradient(circle_at_center,rgba(37,99,235,.24),transparent_58%),#0B1E36]">
           <UserRound className="h-20 w-20 text-blue-400/70" strokeWidth={1.2} />
         </div>
       )}
